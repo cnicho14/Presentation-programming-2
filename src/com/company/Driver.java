@@ -36,6 +36,13 @@ public class Driver
         Bob bob = new Bob();
         bob.compete();
         bob.swim();
+        List<Developer> developers = new ArrayList<>();
+        FrontEndDeveloper js =  new FrontEndDeveloper();
+        BackEndDeveloper java = new BackEndDeveloper();
+        developers.add(js);
+        developers.add(java);
+        Project project = new Project(developers);
+        project.implement();
 
 
 
