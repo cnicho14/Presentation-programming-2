@@ -2,6 +2,9 @@ package com.company;
 
 import java.util.List;
 
+/**
+ * Single responsibility principle
+ */
 public class Customer
 {
     private String name;
@@ -16,6 +19,12 @@ public class Customer
         this.age = age;
     }
 
+    /**
+     * Does this method really belong in the Customer class
+     * or should it be abstracted away in a CheckOut class?
+     * @param tax
+     * @return
+     */
     public double calculateBill(double tax)
     {
         for (Item item : listOfItems)
@@ -27,6 +36,9 @@ public class Customer
         return bill;
     }
 
+    /**
+     * I feel like this one might be a giveaway
+     */
     public void fixMyCar()
     {
         System.out.println("Fixed your car");

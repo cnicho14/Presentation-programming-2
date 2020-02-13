@@ -1,5 +1,8 @@
 package com.company;
 
+/**
+ * SRP part of customer
+ */
 public class Item
 {
     private String name;

@@ -1,5 +1,8 @@
 package com.company;
 
+/**
+ * Static polymorphism
+ */
 public class Calculator
 {
     public int addNumbers(int a, int b)
