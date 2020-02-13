@@ -11,4 +11,9 @@ public class Calculator
     {
         return a + b + c;
     }
+
+    public double addNumbers(double a, double b, double c)
+    {
+        return a + b + c;
+    }
 }
